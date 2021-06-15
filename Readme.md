@@ -14,4 +14,12 @@
 
 <br/>
 
+ASP.NET Core Blazor UI:
+![blazor](https://user-images.githubusercontent.com/14300209/122009707-05874500-cdc3-11eb-9dd6-1a52181d1642.png)
+
+WinForms:
+![win_1](https://user-images.githubusercontent.com/14300209/122009690-00c29100-cdc3-11eb-9d17-d839dbe598dc.png)
+
+ASP.NET:
+![web](https://user-images.githubusercontent.com/14300209/122009700-0324eb00-cdc3-11eb-9a7b-25c3e6f7bdee.png)
 
