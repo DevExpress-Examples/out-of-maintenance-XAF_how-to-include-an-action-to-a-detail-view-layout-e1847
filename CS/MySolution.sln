@@ -1,5 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Win", "MySolution.Win\MySolution.Win.csproj", "{F7A1561C-FD7D-4D88-89B2-C7921BBE6855}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Module", "MySolution.Module\MySolution.Module.csproj", "{FC57589F-15B6-40D5-9021-471C841ACB8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Module.Web", "MySolution.Module.Web\MySolution.Module.Web.csproj", "{7F5E3369-D538-4F1A-BD9B-86DD2A24859C}"
@@ -7,8 +9,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Web", "MySolution.Web\MySolution.Web.csproj", "{1D03CF83-BE7A-4DDC-87A5-AFCCDE9AC9F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Module.Win", "MySolution.Module.Win\MySolution.Module.Win.csproj", "{451A8F8B-B926-4DE3-B88E-0A9AA9D3A68F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Win", "MySolution.Win\MySolution.Win.csproj", "{F7A1561C-FD7D-4D88-89B2-C7921BBE6855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
