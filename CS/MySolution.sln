@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Web", "MySolutio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySolution.Module.Win", "MySolution.Module.Win\MySolution.Module.Win.csproj", "{451A8F8B-B926-4DE3-B88E-0A9AA9D3A68F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySolution.Module.Blazor", "MySolution.Module.Blazor\MySolution.Module.Blazor.csproj", "{6ADB34B0-125B-4E6E-A2C5-A183368F813D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySolution.Blazor.Server", "MySolution.Blazor.Server\MySolution.Blazor.Server.csproj", "{2AE90F49-8879-417A-93F4-96AA4F09921F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
