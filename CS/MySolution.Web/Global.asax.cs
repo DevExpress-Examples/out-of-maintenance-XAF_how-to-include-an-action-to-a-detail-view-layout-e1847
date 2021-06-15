@@ -17,7 +17,7 @@ namespace MySolution.Web {
             InitializeComponent();
         }
         protected void Application_Start(Object sender, EventArgs e) {
-            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
+            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.Latest;
             ASPxWebControl.CallbackError += new EventHandler(Application_Error);
 #if EASYTEST
             DevExpress.ExpressApp.Web.TestScripts.TestScriptsManager.EasyTestEnabled = true;
@@ -25,6 +25,8 @@ namespace MySolution.Web {
         }
         protected void Session_Start(Object sender, EventArgs e) {
             WebApplication.SetInstance(Session, new MySolutionAspNetApplication());
+            DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
+            WebApplication.Instance.SwitchToNewStyle();
             WebApplication.Instance.ConnectionString = InMemoryDataStoreProvider.ConnectionString;
             WebApplication.Instance.Setup();
             WebApplication.Instance.Start();
