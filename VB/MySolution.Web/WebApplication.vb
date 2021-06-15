@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports DevExpress.ExpressApp
 Imports System.ComponentModel
 Imports DevExpress.ExpressApp.Xpo
@@ -11,6 +10,7 @@ Namespace MySolution.Web
 	' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/DevExpressExpressAppWebWebApplicationMembersTopicAll
 	Partial Public Class MySolutionAspNetApplication
 		Inherits WebApplication
+
 		Private module1 As DevExpress.ExpressApp.SystemModule.SystemModule
 		Private module2 As DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule
 		Private module3 As MySolution.Module.MySolutionModule
@@ -23,7 +23,7 @@ Namespace MySolution.Web
 			args.ObjectSpaceProvider = New XPObjectSpaceProvider(args.ConnectionString, args.Connection, True)
 		End Sub
 
-		Private Sub MySolutionAspNetApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles MyBase.DatabaseVersionMismatch
+		Private Sub MySolutionAspNetApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles Me.DatabaseVersionMismatch
 			e.Updater.Update()
 			e.Handled = True
 		End Sub
@@ -33,7 +33,7 @@ Namespace MySolution.Web
 			Me.module2 = New DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule()
 			Me.module3 = New MySolution.Module.MySolutionModule()
 			Me.module4 = New MySolution.Module.Web.MySolutionAspNetModule()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' MySolutionAspNetApplication
 			' 
@@ -43,8 +43,9 @@ Namespace MySolution.Web
 			Me.Modules.Add(Me.module3)
 			Me.Modules.Add(Me.module4)
 
-'			Me.DatabaseVersionMismatch += New System.EventHandler(Of DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs)(Me.MySolutionAspNetApplication_DatabaseVersionMismatch);
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.MySolutionAspNetApplication_DatabaseVersionMismatch);
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 	End Class

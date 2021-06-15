@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Configuration
 Imports System.Windows.Forms
 
@@ -11,15 +10,13 @@ Imports DevExpress.Persistent.BaseImpl
 Imports DevExpress.ExpressApp.Xpo
 
 Namespace MySolution.Win
-	Friend NotInheritable Class Program
+	Friend Module Program
 		''' <summary>
 		''' The main entry point for the application.
 		''' </summary>
-		Private Sub New()
-		End Sub
-		<STAThread> _
-		Shared Sub Main()
-            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.Latest
+		<STAThread>
+		Sub Main()
+			DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.Latest
 #If EASYTEST Then
 			DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register()
 #End If
@@ -35,5 +32,5 @@ Namespace MySolution.Win
 				winApplication.HandleException(e)
 			End Try
 		End Sub
-	End Class
+	End Module
 End Namespace

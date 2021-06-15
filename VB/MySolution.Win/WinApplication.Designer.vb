@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace MySolution.Win
+﻿Namespace MySolution.Win
 	Partial Public Class MySolutionWindowsFormsApplication
 		''' <summary> 
 		''' Required designer variable.
@@ -30,7 +28,7 @@ Namespace MySolution.Win
 			Me.module3 = New MySolution.Module.MySolutionModule()
 			Me.module4 = New MySolution.Module.Win.MySolutionWindowsFormsModule()
 
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' MySolutionWindowsFormsApplication
 			' 
@@ -39,10 +37,12 @@ Namespace MySolution.Win
 			Me.Modules.Add(Me.module2)
 			Me.Modules.Add(Me.module3)
 			Me.Modules.Add(Me.module4)
-'			Me.DatabaseVersionMismatch += New System.EventHandler(Of DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs)(Me.MySolutionWindowsFormsApplication_DatabaseVersionMismatch);
-'			Me.CustomizeLanguagesList += New System.EventHandler(Of DevExpress.ExpressApp.CustomizeLanguagesListEventArgs)(Me.MySolutionWindowsFormsApplication_CustomizeLanguagesList);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.MySolutionWindowsFormsApplication_DatabaseVersionMismatch);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.MySolutionWindowsFormsApplication_CustomizeLanguagesList);
 
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 

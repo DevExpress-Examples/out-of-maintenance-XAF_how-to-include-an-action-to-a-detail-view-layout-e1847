@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Linq
 Imports System.Text
 Imports System.ComponentModel
@@ -16,9 +15,10 @@ Imports DevExpress.ExpressApp.Model.NodeGenerators
 
 Namespace MySolution.Module.Win
 	' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
-	<ToolboxItemFilter("Xaf.Platform.Win")> _
+	<ToolboxItemFilter("Xaf.Platform.Win")>
 	Public NotInheritable Partial Class MySolutionWindowsFormsModule
 		Inherits ModuleBase
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub

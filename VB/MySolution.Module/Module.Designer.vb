@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace MySolution.Module
+﻿Namespace MySolution.Module
 	Partial Public Class MySolutionModule
 		''' <summary> 
 		''' Required designer variable.

@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Text
 Imports System.Linq
 Imports DevExpress.ExpressApp
@@ -19,6 +18,7 @@ Namespace MySolution.Module
 	' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
 	Public NotInheritable Partial Class MySolutionModule
 		Inherits ModuleBase
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub

@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Linq
 Imports DevExpress.Xpo
 Imports DevExpress.ExpressApp
@@ -18,6 +17,7 @@ Namespace MySolution.Module.DatabaseUpdate
 	' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppUpdatingModuleUpdatertopic
 	Public Class Updater
 		Inherits ModuleUpdater
+
 		Public Sub New(ByVal objectSpace As IObjectSpace, ByVal currentDBVersion As Version)
 			MyBase.New(objectSpace, currentDBVersion)
 		End Sub

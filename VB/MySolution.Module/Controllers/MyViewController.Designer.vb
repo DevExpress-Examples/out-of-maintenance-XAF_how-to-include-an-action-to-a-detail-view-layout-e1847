@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace MySolution.Module.Controllers
+﻿Namespace MySolution.Module.Controllers
 	Partial Public Class MyViewController
 		''' <summary>
 		''' Required designer variable.
@@ -35,7 +33,8 @@ Namespace MySolution.Module.Controllers
 			Me.MySimpleAction.ConfirmationMessage = Nothing
 			Me.MySimpleAction.Id = "MySimpleAction"
 			Me.MySimpleAction.ToolTip = Nothing
-'			Me.MySimpleAction.Execute += New DevExpress.ExpressApp.Actions.SimpleActionExecuteEventHandler(Me.MySimpleAction_Execute);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.MySimpleAction.Execute += new DevExpress.ExpressApp.Actions.SimpleActionExecuteEventHandler(this.MySimpleAction_Execute);
 
 		End Sub
 

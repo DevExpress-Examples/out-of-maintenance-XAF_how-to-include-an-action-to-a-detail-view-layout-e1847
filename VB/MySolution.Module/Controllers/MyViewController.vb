@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Linq
 Imports System.Text
 Imports DevExpress.ExpressApp
@@ -19,6 +18,7 @@ Namespace MySolution.Module.Controllers
 	' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppViewControllertopic.
 	Partial Public Class MyViewController
 		Inherits ViewController
+
 		Public Sub New()
 			InitializeComponent()
 			RegisterActions(components)
