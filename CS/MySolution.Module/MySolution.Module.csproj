@@ -22,7 +22,7 @@
     <EmbeddedResource Remove="bin\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.ExpressApp" Version="21.1.4" />
-    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="21.1.4" />
+    <PackageReference Include="DevExpress.ExpressApp" Version="21.1.5" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="21.1.5" />
   </ItemGroup>
 </Project>
